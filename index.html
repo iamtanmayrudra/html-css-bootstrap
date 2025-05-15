@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hill Cab</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/global.css" />
+  </head>
+
+  <body>
+    <header>
+      <!-- Top Bar -->
+      <div class="top-bar">
+        <i class="bi bi-shield-check text-success me-1"></i> Trusted Shipping
+      </div>
+
+      <!-- Main Navbar -->
+      <nav class="navbar navbar-expand-lg">
+        <div class="container">
+          <a class="navbar-brand d-flex align-items-center" href="#">
+            <img
+              src="https://via.placeholder.com/24x24.png?text=🔍"
+              alt="Logo"
+              class="logo-img"
+            />
+            Hill Cab
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-center"
+            id="navbarNav"
+          >
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Shop Now</a>
+              </li>
+              <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Benefits</a>
+              </li>
+              <li class="nav-item"><a class="nav-link" href="#">Review</a></li>
+            </ul>
+          </div>
+          <div class="d-flex align-items-center position-relative">
+            <i class="bi bi-cart nav-icon"></i>
+            <span class="cart-count">0</span>
+            <a href="#" class="login-link">Login</a>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="indexbodyBanner">
+        <div class="container py-5">
+          <div class="row g-4">
+            <!-- Left Hero Image Column -->
+            <div class="col-lg-6">
+              <div
+                class="hero-img"
+                style="
+                  background-image: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=600&q=80');
+                "
+              >
+                <h2>STYLE THAT<br />MOVES WITH YOU.</h2>
+                <p>
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry.
+                </p>
+                <button class="btn btn-dark-custom">SHOP NOW</button>
+              </div>
+            </div>
+
+            <!-- Right Column with text and cards -->
+            <div class="col-lg-6 d-flex flex-column gap-4">
+              <!-- Top Text Block -->
+              <div class="gray-box text-block">
+                <h1>Built to Carry,<br />Designed to Impress.</h1>
+                <p>
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry.
+                </p>
+                <button class="btn btn-dark-custom">SHOP NOW</button>
+              </div>
+
+              <!-- Feature Cards -->
+              <div class="row g-3">
+                <div class="col-md-6">
+                  <div class="feature-card bg-light text-center">
+                    <div class="feature-icon">🚚</div>
+                    <h5><strong>Free Shipping</strong></h5>
+                    <p>
+                      Lorem Ipsum is simply dummy text of the printing and
+                      typesetting industry.
+                    </p>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="feature-card border text-center">
+                    <div class="feature-icon">🛡️</div>
+                    <h5><strong>Secure Payment</strong></h5>
+                    <p>
+                      Lorem Ipsum is simply dummy text of the printing and
+                      typesetting industry.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="productAll">
+        <div class="container py-5">
+          <h2 class="section-title">Feature Product</h2>
+          <div class="row g-4">
+            <!-- Repeat this col for each product -->
+            <div class="col-6 col-md-4 col-lg-3">
+              <div class="product-card">
+                <span class="wishlist-icon">&hearts;</span>
+                <img
+                  src="https://via.placeholder.com/200x150?text=Bag"
+                  alt="Product Image"
+                />
+                <div>Product Name</div>
+                <div class="product-price">$40.00</div>
+                <button class="btn btn-cart mt-2">ADD TO CART</button>
+              </div>
+            </div>
+            <!-- Copy the above .col block for each product -->
+            <!-- Example below with different image for variety -->
+            <div class="col-6 col-md-4 col-lg-3">
+              <div class="product-card">
+                <span class="wishlist-icon">&hearts;</span>
+                <img
+                  src="https://via.placeholder.com/200x150?text=Backpack"
+                  alt="Product Image"
+                />
+                <div>Product Name</div>
+                <div class="product-price">$40.00</div>
+                <button class="btn btn-cart mt-2">ADD TO CART</button>
+              </div>
+            </div>
+            <!-- Add more product cards as needed... -->
+            <!-- Example below with different image for variety -->
+            <div class="col-6 col-md-4 col-lg-3">
+              <div class="product-card">
+                <span class="wishlist-icon">&hearts;</span>
+                <img
+                  src="https://via.placeholder.com/200x150?text=Backpack"
+                  alt="Product Image"
+                />
+                <div>Product Name</div>
+                <div class="product-price">$40.00</div>
+                <button class="btn btn-cart mt-2">ADD TO CART</button>
+              </div>
+            </div>
+            <!-- Add more product cards as needed... -->
+            <!-- Example below with different image for variety -->
+            <div class="col-6 col-md-4 col-lg-3">
+              <div class="product-card">
+                <span class="wishlist-icon">&hearts;</span>
+                <img
+                  src="https://via.placeholder.com/200x150?text=Backpack"
+                  alt="Product Image"
+                />
+                <div>Product Name</div>
+                <div class="product-price">$40.00</div>
+                <button class="btn btn-cart mt-2">ADD TO CART</button>
+              </div>
+            </div>
+            <!-- Add more product cards as needed... -->
+            <!-- Example below with different image for variety -->
+            <div class="col-6 col-md-4 col-lg-3">
+              <div class="product-card">
+                <span class="wishlist-icon">&hearts;</span>
+                <img
+                  src="https://via.placeholder.com/200x150?text=Backpack"
+                  alt="Product Image"
+                />
+                <div>Product Name</div>
+                <div class="product-price">$40.00</div>
+                <button class="btn btn-cart mt-2">ADD TO CART</button>
+              </div>
+            </div>
+            <!-- Add more product cards as needed... -->
+            <!-- Example below with different image for variety -->
+            <div class="col-6 col-md-4 col-lg-3">
+              <div class="product-card">
+                <span class="wishlist-icon">&hearts;</span>
+                <img
+                  src="https://via.placeholder.com/200x150?text=Backpack"
+                  alt="Product Image"
+                />
+                <div>Product Name</div>
+                <div class="product-price">$40.00</div>
+                <button class="btn btn-cart mt-2">ADD TO CART</button>
+              </div>
+            </div>
+            <!-- Add more product cards as needed... -->
+            <!-- Example below with different image for variety -->
+            <div class="col-6 col-md-4 col-lg-3">
+              <div class="product-card">
+                <span class="wishlist-icon">&hearts;</span>
+                <img
+                  src="https://via.placeholder.com/200x150?text=Backpack"
+                  alt="Product Image"
+                />
+                <div>Product Name</div>
+                <div class="product-price">$40.00</div>
+                <button class="btn btn-cart mt-2">ADD TO CART</button>
+              </div>
+            </div>
+            <!-- Add more product cards as needed... -->
+            <!-- Example below with different image for variety -->
+            <div class="col-6 col-md-4 col-lg-3">
+              <div class="product-card">
+                <span class="wishlist-icon">&hearts;</span>
+                <img
+                  src="https://via.placeholder.com/200x150?text=Backpack"
+                  alt="Product Image"
+                />
+                <div>Product Name</div>
+                <div class="product-price">$40.00</div>
+                <button class="btn btn-cart mt-2">ADD TO CART</button>
+              </div>
+            </div>
+            <!-- Add more product cards as needed... -->
+          </div>
+        </div>
+      </section>
+
+      <section class="premiumBags">
+        <div class="container">
+          <div class="promo-section row align-items-center">
+            <div class="col-md-6 promo-text">
+              <h2>Smart Looks.<br />Smarter Storage.</h2>
+              <p>Find out more Premium Quality Bags.</p>
+              <button class="btn btn-shop">SHOP NOW</button>
+            </div>
+            <div class="col-md-6 promo-image">
+              <img
+                src="https://via.placeholder.com/500x350?text=Promo+Bag+Image"
+                alt="Premium Bag"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="Cashbacks">
+        <div class="container">
+          <div class="cashback-banner">
+            <img
+              src="https://via.placeholder.com/100x70?text=Card"
+              class="card-img"
+              alt="Card Image"
+            />
+
+            <div class="cashback-text flex-grow-1">
+              <h5>
+                Apply today and get back
+                <span class="highlight">10% CASH BACK</span>
+              </h5>
+              <p>
+                It was popularised in the 1960s with the release of Letraset
+                sheets containing Lorem
+              </p>
+            </div>
+
+            <button class="btn-buy">BUY NOW</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="productAll">
+        <div class="container py-5">
+          <h2 class="section-title">Feature Product</h2>
+          <div class="row g-4">
+            <!-- Repeat this col for each product -->
+            <div class="col-6 col-md-4 col-lg-3">
+              <div class="product-card">
+                <span class="wishlist-icon">&hearts;</span>
+                <img
+                  src="https://via.placeholder.com/200x150?text=Bag"
+                  alt="Product Image"
+                />
+                <div>Product Name</div>
+                <div class="product-price">$40.00</div>
+                <button class="btn btn-cart mt-2">ADD TO CART</button>
+              </div>
+            </div>
+            <!-- Copy the above .col block for each product -->
+            <!-- Example below with different image for variety -->
+            <div class="col-6 col-md-4 col-lg-3">
+              <div class="product-card">
+                <span class="wishlist-icon">&hearts;</span>
+                <img
+                  src="https://via.placeholder.com/200x150?text=Backpack"
+                  alt="Product Image"
+                />
+                <div>Product Name</div>
+                <div class="product-price">$40.00</div>
+                <button class="btn btn-cart mt-2">ADD TO CART</button>
+              </div>
+            </div>
+            <!-- Add more product cards as needed... -->
+            <!-- Example below with different image for variety -->
+            <div class="col-6 col-md-4 col-lg-3">
+              <div class="product-card">
+                <span class="wishlist-icon">&hearts;</span>
+                <img
+                  src="https://via.placeholder.com/200x150?text=Backpack"
+                  alt="Product Image"
+                />
+                <div>Product Name</div>
+                <div class="product-price">$40.00</div>
+                <button class="btn btn-cart mt-2">ADD TO CART</button>
+              </div>
+            </div>
+            <!-- Add more product cards as needed... -->
+            <!-- Example below with different image for variety -->
+            <div class="col-6 col-md-4 col-lg-3">
+              <div class="product-card">
+                <span class="wishlist-icon">&hearts;</span>
+                <img
+                  src="https://via.placeholder.com/200x150?text=Backpack"
+                  alt="Product Image"
+                />
+                <div>Product Name</div>
+                <div class="product-price">$40.00</div>
+                <button class="btn btn-cart mt-2">ADD TO CART</button>
+              </div>
+            </div>
+            <!-- Add more product cards as needed... -->
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="row mb-4">
+          <div class="col-md-4">
+            <div class="d-flex align-items-center mb-3">
+              <img
+                src="https://via.placeholder.com/48/00ff00/ffffff?text=A"
+                alt="Logo"
+                class="me-2"
+              />
+              <span class="logo-text">Hill Cab</span>
+            </div>
+            <p class="tagline">Your eCommerce Solution Platform</p>
+            <div class="social-icons d-flex">
+              <img
+                src="https://cdn-icons-png.flaticon.com/512/145/145802.png"
+                alt="Facebook"
+              />
+              <img
+                src="https://cdn-icons-png.flaticon.com/512/733/733579.png"
+                alt="X"
+              />
+              <img
+                src="https://cdn-icons-png.flaticon.com/512/174/174855.png"
+                alt="Instagram"
+              />
+              <img
+                src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png"
+                alt="YouTube"
+              />
+              <img
+                src="https://cdn-icons-png.flaticon.com/512/124/124010.png"
+                alt="WhatsApp"
+              />
+            </div>
+          </div>
+
+          <div class="col-md-2">
+            <h6>Products</h6>
+            <ul class="list-unstyled">
+              <li><a href="#">All Reviews</a></li>
+              <li><a href="#">Social Shop</a></li>
+              <li><a href="#">Social Weight</a></li>
+              <li><a href="#">True Profit</a></li>
+              <li><a href="#">All Products</a></li>
+            </ul>
+          </div>
+
+          <div class="col-md-3">
+            <h6>Services</h6>
+            <ul class="list-unstyled">
+              <li><a href="#">Website Audit</a></li>
+              <li><a href="#">Website Transition</a></li>
+              <li><a href="#">Page Speed Optimization</a></li>
+              <li><a href="#">Product Feed Optimization</a></li>
+            </ul>
+          </div>
+
+          <div class="col-md-3">
+            <h6>Subscribe Our Newsletter</h6>
+            <form class="newsletter d-flex">
+              <input
+                type="email"
+                class="form-control me-2"
+                placeholder="Enter your email"
+              />
+              <button type="submit" class="btn">
+                <i class="bi bi-send-fill text-white"></i>
+              </button>
+            </form>
+
+            <h6 class="mt-4">Official Partner</h6>
+            <div class="partner-icons d-flex">
+              <img
+                src="https://cdn-icons-png.flaticon.com/512/5968/5968756.png"
+                alt="Shopify"
+              />
+              <img
+                src="https://cdn-icons-png.flaticon.com/512/5968/5968885.png"
+                alt="Amazon"
+              />
+              <img
+                src="https://cdn-icons-png.flaticon.com/512/5968/5968705.png"
+                alt="Flipkart"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-12 text-center">
+            <p class="copyright">
+              © 2025 YourCompanyName. All rights reserved.<br />
+              Prices, specifications, and availability of products are subject
+              to change without notice. We are not responsible for typographical
+              or illustrative errors.
+              <br />
+              This site is protected by reCAPTCHA and the Google
+              <a href="#">Privacy Policy</a> and
+              <a href="#">Terms of Service</a> apply.
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hill Cab</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/global.css" />
+  </head>
+
+  <body>
+    <header>
+      <!-- Top Bar -->
+      <div class="top-bar">
+        <i class="bi bi-shield-check text-success me-1"></i> Trusted Shipping
+      </div>
+
+      <!-- Main Navbar -->
+      <nav class="navbar navbar-expand-lg">
+        <div class="container">
+          <a class="navbar-brand d-flex align-items-center" href="#">
+            <img
+              src="https://via.placeholder.com/24x24.png?text=🔍"
+              alt="Logo"
+              class="logo-img"
+            />
+            Hill Cab
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-center"
+            id="navbarNav"
+          >
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Shop Now</a>
+              </li>
+              <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Benefits</a>
+              </li>
+              <li class="nav-item"><a class="nav-link" href="#">Review</a></li>
+            </ul>
+          </div>
+          <div class="d-flex align-items-center position-relative">
+            <i class="bi bi-cart nav-icon"></i>
+            <span class="cart-count">0</span>
+            <a href="#" class="login-link">Login</a>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="checkoutContent">
+        <div class="container">
+          <div class="row">
+              <!-- Order Summary -->
+              <div class="col-md-4">
+                  <div class="section summary">
+                      <h4>Order Summary</h4>
+                      <div class="item">
+                          <img src="dates-value-pack.jpg" alt="Dates Value Pack">
+                          <div class="details">
+                              <p>Dates Value Pack Pouch</p>
+                              <p>$120.25 <del>$123.25</del></p>
+                          </div>
+                      </div>
+                      <div class="item">
+                          <img src="smoked-honey-nuts.jpg" alt="Smoked Honey Spiced Nuts">
+                          <div class="details">
+                              <p>Smoked Honey Spiced Nuts</p>
+                              <p>$120.25 <del>$123.25</del></p>
+                          </div>
+                      </div>
+                      <p><strong>Sub-Total:</strong> $80.00</p>
+                      <p><strong>Delivery Charges:</strong> $5.00</p>
+                      <p><strong>Total Amount:</strong> $85.00</p>
+                  </div>
+
+                  <!-- Delivery Method -->
+                  <div class="section">
+                      <h4>Delivery Method</h4>
+                      <label><input type="radio" name="delivery" checked> Free Shipping - $0.00</label><br>
+                      <label><input type="radio" name="delivery"> Flat Rate - $5.00</label><br>
+                      <textarea class="form-control mt-2" placeholder="Add Comments About Your Order"></textarea>
+                  </div>
+
+                  <!-- Payment Method -->
+                  <div class="section">
+                      <h4>Payment Method</h4>
+                      <label><input type="radio" name="payment" checked> Cash On Delivery</label><br>
+                      <label><input type="radio" name="payment"> UPI</label><br>
+                      <label><input type="radio" name="payment"> Bank Transfer</label><br>
+                      <div class="payment-icons">
+                          <img src="visa.png" alt="Visa">
+                          <img src="paypal.png" alt="PayPal">
+                          <img src="skrill.png" alt="Skrill">
+                          <img src="visa-electron.png" alt="Visa Electron">
+                      </div>
+                  </div>
+              </div>
+
+              <!-- Customer Details -->
+              <div class="col-md-8">
+                  <div class="section">
+                      <h4>New Customer</h4>
+                      <button class="btn btn-primary">Register Account</button>
+                      <button class="btn btn-secondary">Checkout as Guest</button>
+                  </div>
+
+                  <div class="section">
+                      <h4>Returning Customer</h4>
+                      <input type="email" class="form-control" placeholder="Enter Email"><br>
+                      <input type="password" class="form-control" placeholder="Enter Password"><br>
+                      <button class="btn btn-success">Login</button>
+                  </div>
+
+                  <div class="section">
+                      <h4>Billing Details</h4>
+                      <input type="text" class="form-control" placeholder="Full Name"><br>
+                      <input type="text" class="form-control" placeholder="Address"><br>
+                      <input type="text" class="form-control" placeholder="City"><br>
+                      <select class="form-control">
+                          <option>Country</option>
+                          <option>India</option>
+                          <option>USA</option>
+                      </select><br>
+                      <input type="text" class="form-control" placeholder="Post Code"><br>
+                      <select class="form-control">
+                          <option>Region/State</option>
+                          <option>West Bengal</option>
+                          <option>Maharashtra</option>
+                      </select><br>
+                      <button class="btn btn-primary">Continue</button>
+                  </div>
+              </div>
+          </div>
+      </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="row mb-4">
+          <div class="col-md-4">
+            <div class="d-flex align-items-center mb-3">
+              <img
+                src="https://via.placeholder.com/48/00ff00/ffffff?text=A"
+                alt="Logo"
+                class="me-2"
+              />
+              <span class="logo-text">Hill Cab</span>
+            </div>
+            <p class="tagline">Your eCommerce Solution Platform</p>
+            <div class="social-icons d-flex">
+              <img
+                src="https://cdn-icons-png.flaticon.com/512/145/145802.png"
+                alt="Facebook"
+              />
+              <img
+                src="https://cdn-icons-png.flaticon.com/512/733/733579.png"
+                alt="X"
+              />
+              <img
+                src="https://cdn-icons-png.flaticon.com/512/174/174855.png"
+                alt="Instagram"
+              />
+              <img
+                src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png"
+                alt="YouTube"
+              />
+              <img
+                src="https://cdn-icons-png.flaticon.com/512/124/124010.png"
+                alt="WhatsApp"
+              />
+            </div>
+          </div>
+
+          <div class="col-md-2">
+            <h6>Products</h6>
+            <ul class="list-unstyled">
+              <li><a href="#">All Reviews</a></li>
+              <li><a href="#">Social Shop</a></li>
+              <li><a href="#">Social Weight</a></li>
+              <li><a href="#">True Profit</a></li>
+              <li><a href="#">All Products</a></li>
+            </ul>
+          </div>
+
+          <div class="col-md-3">
+            <h6>Services</h6>
+            <ul class="list-unstyled">
+              <li><a href="#">Website Audit</a></li>
+              <li><a href="#">Website Transition</a></li>
+              <li><a href="#">Page Speed Optimization</a></li>
+              <li><a href="#">Product Feed Optimization</a></li>
+            </ul>
+          </div>
+
+          <div class="col-md-3">
+            <h6>Subscribe Our Newsletter</h6>
+            <form class="newsletter d-flex">
+              <input
+                type="email"
+                class="form-control me-2"
+                placeholder="Enter your email"
+              />
+              <button type="submit" class="btn">
+                <i class="bi bi-send-fill text-white"></i>
+              </button>
+            </form>
+
+            <h6 class="mt-4">Official Partner</h6>
+            <div class="partner-icons d-flex">
+              <img
+                src="https://cdn-icons-png.flaticon.com/512/5968/5968756.png"
+                alt="Shopify"
+              />
+              <img
+                src="https://cdn-icons-png.flaticon.com/512/5968/5968885.png"
+                alt="Amazon"
+              />
+              <img
+                src="https://cdn-icons-png.flaticon.com/512/5968/5968705.png"
+                alt="Flipkart"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-12 text-center">
+            <p class="copyright">
+              © 2025 YourCompanyName. All rights reserved.<br />
+              Prices, specifications, and availability of products are subject
+              to change without notice. We are not responsible for typographical
+              or illustrative errors.
+              <br />
+              This site is protected by reCAPTCHA and the Google
+              <a href="#">Privacy Policy</a> and
+              <a href="#">Terms of Service</a> apply.
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

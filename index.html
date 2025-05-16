@@ -22,12 +22,7 @@
       <nav class="navbar navbar-expand-lg">
         <div class="container">
           <a class="navbar-brand d-flex align-items-center" href="#">
-            <img
-              src="https://via.placeholder.com/24x24.png?text=🔍"
-              alt="Logo"
-              class="logo-img"
-            />
-            Hill Cab
+            <img src="images/logo.svg" alt="Logo" class="logo-img" />
           </a>
           <button
             class="navbar-toggler"
@@ -56,8 +51,10 @@
             </ul>
           </div>
           <div class="d-flex align-items-center position-relative">
-            <i class="bi bi-cart nav-icon"></i>
-            <span class="cart-count">0</span>
+            <div class="cartBar">
+              <img src="images/cartIcon.svg" alt="Cart Icons" />
+              <span>0</span>
+            </div>
             <a href="#" class="login-link">Login</a>
           </div>
         </div>
@@ -70,18 +67,23 @@
           <div class="row g-4">
             <!-- Left Hero Image Column -->
             <div class="col-lg-6">
-              <div
-                class="hero-img"
-                style="
-                  background-image: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=600&q=80');
-                "
-              >
-                <h2>STYLE THAT<br />MOVES WITH YOU.</h2>
-                <p>
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry.
-                </p>
-                <button class="btn btn-dark-custom">SHOP NOW</button>
+              <div class="hero-img">
+                <img
+                  src="images/heroImage@1x.jpg"
+                  srcset="
+                    images/heroImage@2x.jpg 1x,
+                    images/heroImage@2x.jpg 2x
+                  "
+                  alt=""
+                />
+                <div class="herobanner">
+                  <h2>STYLE THAT<br />MOVES WITH YOU.</h2>
+                  <p>
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry.
+                  </p>
+                  <button class="btn btn-dark-custom">SHOP NOW</button>
+                </div>
               </div>
             </div>
 
@@ -101,7 +103,9 @@
               <div class="row g-3">
                 <div class="col-md-6">
                   <div class="feature-card bg-light text-center">
-                    <div class="feature-icon">🚚</div>
+                    <div class="feature-icon">
+                      <img src="images/shipping.svg" alt="" />
+                    </div>
                     <h5><strong>Free Shipping</strong></h5>
                     <p>
                       Lorem Ipsum is simply dummy text of the printing and
@@ -111,7 +115,9 @@
                 </div>
                 <div class="col-md-6">
                   <div class="feature-card border text-center">
-                    <div class="feature-icon">🛡️</div>
+                    <div class="feature-icon">
+                      <img src="images/secureIcon.svg" alt="Secure Icon" />
+                    </div>
                     <h5><strong>Secure Payment</strong></h5>
                     <p>
                       Lorem Ipsum is simply dummy text of the printing and
@@ -132,112 +138,136 @@
             <!-- Repeat this col for each product -->
             <div class="col-6 col-md-4 col-lg-3">
               <div class="product-card">
-                <span class="wishlist-icon">&hearts;</span>
-                <img
-                  src="https://via.placeholder.com/200x150?text=Bag"
-                  alt="Product Image"
-                />
-                <div>Product Name</div>
-                <div class="product-price">$40.00</div>
-                <button class="btn btn-cart mt-2">ADD TO CART</button>
+                <span class="wishlist-icon">
+                  <img src="images/heart.svg" alt="wish product" />
+                </span>
+                <img src="images/product1.png" alt="Product Image" />
+                <div class="product-details flex">
+                  <h3 class="productName">Product Name</h3>
+                  <div class="price-button">
+                    <div class="product-price">$40.00</div>
+                    <button class="btn btn-cart mt-2">ADD TO CART</button>
+                  </div>
+                </div>
               </div>
             </div>
             <!-- Copy the above .col block for each product -->
             <!-- Example below with different image for variety -->
             <div class="col-6 col-md-4 col-lg-3">
               <div class="product-card">
-                <span class="wishlist-icon">&hearts;</span>
-                <img
-                  src="https://via.placeholder.com/200x150?text=Backpack"
-                  alt="Product Image"
-                />
-                <div>Product Name</div>
-                <div class="product-price">$40.00</div>
-                <button class="btn btn-cart mt-2">ADD TO CART</button>
+                <span class="wishlist-icon">
+                  <img src="images/heart.svg" alt="wish product" />
+                </span>
+                <img src="images/product2.png" alt="Product Image" />
+                <div class="product-details flex">
+                  <h3 class="productName">Product Name</h3>
+                  <div class="price-button">
+                    <div class="product-price">$40.00</div>
+                    <button class="btn btn-cart mt-2">ADD TO CART</button>
+                  </div>
+                </div>
               </div>
             </div>
             <!-- Add more product cards as needed... -->
             <!-- Example below with different image for variety -->
             <div class="col-6 col-md-4 col-lg-3">
               <div class="product-card">
-                <span class="wishlist-icon">&hearts;</span>
-                <img
-                  src="https://via.placeholder.com/200x150?text=Backpack"
-                  alt="Product Image"
-                />
-                <div>Product Name</div>
-                <div class="product-price">$40.00</div>
-                <button class="btn btn-cart mt-2">ADD TO CART</button>
+                <span class="wishlist-icon">
+                  <img src="images/heart.svg" alt="wish product" />
+                </span>
+                <img src="images/product3.png" alt="Product Image" />
+                <div class="product-details flex">
+                  <h3 class="productName">Product Name</h3>
+                  <div class="price-button">
+                    <div class="product-price">$40.00</div>
+                    <button class="btn btn-cart mt-2">ADD TO CART</button>
+                  </div>
+                </div>
               </div>
             </div>
             <!-- Add more product cards as needed... -->
             <!-- Example below with different image for variety -->
             <div class="col-6 col-md-4 col-lg-3">
               <div class="product-card">
-                <span class="wishlist-icon">&hearts;</span>
-                <img
-                  src="https://via.placeholder.com/200x150?text=Backpack"
-                  alt="Product Image"
-                />
-                <div>Product Name</div>
-                <div class="product-price">$40.00</div>
-                <button class="btn btn-cart mt-2">ADD TO CART</button>
+                <span class="wishlist-icon">
+                  <img src="images/heart.svg" alt="wish product" />
+                </span>
+                <img src="images/product4.png" alt="Product Image" />
+                <div class="product-details flex">
+                  <h3 class="productName">Product Name</h3>
+                  <div class="price-button">
+                    <div class="product-price">$40.00</div>
+                    <button class="btn btn-cart mt-2">ADD TO CART</button>
+                  </div>
+                </div>
               </div>
             </div>
             <!-- Add more product cards as needed... -->
             <!-- Example below with different image for variety -->
             <div class="col-6 col-md-4 col-lg-3">
               <div class="product-card">
-                <span class="wishlist-icon">&hearts;</span>
-                <img
-                  src="https://via.placeholder.com/200x150?text=Backpack"
-                  alt="Product Image"
-                />
-                <div>Product Name</div>
-                <div class="product-price">$40.00</div>
-                <button class="btn btn-cart mt-2">ADD TO CART</button>
+                <span class="wishlist-icon">
+                  <img src="images/heart.svg" alt="wish product" />
+                </span>
+                <img src="images/product5.png" alt="Product Image" />
+                <div class="product-details flex">
+                  <h3 class="productName">Product Name</h3>
+                  <div class="price-button">
+                    <div class="product-price">$40.00</div>
+                    <button class="btn btn-cart mt-2">ADD TO CART</button>
+                  </div>
+                </div>
               </div>
             </div>
             <!-- Add more product cards as needed... -->
             <!-- Example below with different image for variety -->
             <div class="col-6 col-md-4 col-lg-3">
               <div class="product-card">
-                <span class="wishlist-icon">&hearts;</span>
-                <img
-                  src="https://via.placeholder.com/200x150?text=Backpack"
-                  alt="Product Image"
-                />
-                <div>Product Name</div>
-                <div class="product-price">$40.00</div>
-                <button class="btn btn-cart mt-2">ADD TO CART</button>
+                <span class="wishlist-icon">
+                  <img src="images/heart.svg" alt="wish product" />
+                </span>
+                <img src="images/product1.png" alt="Product Image" />
+                <div class="product-details flex">
+                  <h3 class="productName">Product Name</h3>
+                  <div class="price-button">
+                    <div class="product-price">$40.00</div>
+                    <button class="btn btn-cart mt-2">ADD TO CART</button>
+                  </div>
+                </div>
               </div>
             </div>
             <!-- Add more product cards as needed... -->
             <!-- Example below with different image for variety -->
             <div class="col-6 col-md-4 col-lg-3">
               <div class="product-card">
-                <span class="wishlist-icon">&hearts;</span>
-                <img
-                  src="https://via.placeholder.com/200x150?text=Backpack"
-                  alt="Product Image"
-                />
-                <div>Product Name</div>
-                <div class="product-price">$40.00</div>
-                <button class="btn btn-cart mt-2">ADD TO CART</button>
+                <span class="wishlist-icon">
+                  <img src="images/heart.svg" alt="wish product" />
+                </span>
+                <img src="images/product4.png" alt="Product Image" />
+                <div class="product-details flex">
+                  <h3 class="productName">Product Name</h3>
+                  <div class="price-button">
+                    <div class="product-price">$40.00</div>
+                    <button class="btn btn-cart mt-2">ADD TO CART</button>
+                  </div>
+                </div>
               </div>
             </div>
             <!-- Add more product cards as needed... -->
             <!-- Example below with different image for variety -->
             <div class="col-6 col-md-4 col-lg-3">
               <div class="product-card">
-                <span class="wishlist-icon">&hearts;</span>
-                <img
-                  src="https://via.placeholder.com/200x150?text=Backpack"
-                  alt="Product Image"
-                />
-                <div>Product Name</div>
-                <div class="product-price">$40.00</div>
-                <button class="btn btn-cart mt-2">ADD TO CART</button>
+                <span class="wishlist-icon">
+                  <img src="images/heart.svg" alt="wish product" />
+                </span>
+                <img src="images/product6.png" alt="Product Image" />
+                <div class="product-details flex">
+                  <h3 class="productName">Product Name</h3>
+                  <div class="price-button">
+                    <div class="product-price">$40.00</div>
+                    <button class="btn btn-cart mt-2">ADD TO CART</button>
+                  </div>
+                </div>
               </div>
             </div>
             <!-- Add more product cards as needed... -->
@@ -248,28 +278,35 @@
       <section class="premiumBags">
         <div class="container">
           <div class="promo-section row align-items-center">
-            <div class="col-md-6 promo-text">
-              <h2>Smart Looks.<br />Smarter Storage.</h2>
-              <p>Find out more Premium Quality Bags.</p>
-              <button class="btn btn-shop">SHOP NOW</button>
+            <div class="col-md-6">
+              <div class="promo-text">
+                <img src="images/shopping-bag-svgrepo-com.svg"4 width="30" alt="bag shop">
+                <h2>Smart Looks.<br />Smarter Storage.</h2>
+                <p>Find out more Premium Quality Bags.</p>
+                <button class="btn btn-shop">SHOP NOW</button>
+              </div>
             </div>
-            <div class="col-md-6 promo-image">
-              <img
-                src="https://via.placeholder.com/500x350?text=Promo+Bag+Image"
-                alt="Premium Bag"
-              />
+            <div class="col-md-6">
+              <div class="promo-image">
+                <img
+                  src="images/Cover-image@1x.jpg"
+                  srcset="images/Cover-image@1x.jpg 1x, images/Cover-image@2x.jpg 2x"
+                  alt="Premium Bag"
+                />
+              </div>
             </div>
           </div>
         </div>
       </section>
 
-      <section class="Cashbacks">
+      <section class="cashbacks">
         <div class="container">
           <div class="cashback-banner">
             <img
-              src="https://via.placeholder.com/100x70?text=Card"
+              src="images/card.png"
               class="card-img"
               alt="Card Image"
+              width="175"
             />
 
             <div class="cashback-text flex-grow-1">
@@ -300,7 +337,7 @@
                   src="https://via.placeholder.com/200x150?text=Bag"
                   alt="Product Image"
                 />
-                <div>Product Name</div>
+                <h3 class="productName">Product Name</h3>
                 <div class="product-price">$40.00</div>
                 <button class="btn btn-cart mt-2">ADD TO CART</button>
               </div>
@@ -314,7 +351,7 @@
                   src="https://via.placeholder.com/200x150?text=Backpack"
                   alt="Product Image"
                 />
-                <div>Product Name</div>
+                <h3 class="productName">Product Name</h3>
                 <div class="product-price">$40.00</div>
                 <button class="btn btn-cart mt-2">ADD TO CART</button>
               </div>
@@ -328,7 +365,7 @@
                   src="https://via.placeholder.com/200x150?text=Backpack"
                   alt="Product Image"
                 />
-                <div>Product Name</div>
+                <h3 class="productName">Product Name</h3>
                 <div class="product-price">$40.00</div>
                 <button class="btn btn-cart mt-2">ADD TO CART</button>
               </div>
@@ -342,7 +379,7 @@
                   src="https://via.placeholder.com/200x150?text=Backpack"
                   alt="Product Image"
                 />
-                <div>Product Name</div>
+                <h3 class="productName">Product Name</h3>
                 <div class="product-price">$40.00</div>
                 <button class="btn btn-cart mt-2">ADD TO CART</button>
               </div>

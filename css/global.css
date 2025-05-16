@@ -1,3 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  font-family: "Roboto", sans-serif;
+}
+
 /* Header */
 .top-bar {
   background-color: #1e1e1e;
@@ -15,6 +21,23 @@
 .navbar-nav .nav-link {
   color: #5c5c6e !important;
   margin: 0 10px;
+  font-size: 1.1rem;
+}
+.cartBar {
+  position: relative;
+}
+.cartBar span {
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  width: 1.2rem;
+  height: 1.2rem;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 1.2rem;
+  background: #000;
+  color: #fff;
+  font-size: 0.7rem;
 }
 
 .nav-icon {
@@ -36,7 +59,9 @@
 
 .login-link {
   color: #5c5c6e;
-  margin-left: 15px;
+  margin-left: 1rem;
+  padding-left: 1rem;
+  border-left: 1px solid #e5e5e5;
 }
 
 .navbar {
@@ -44,8 +69,6 @@
 }
 
 .logo-img {
-  width: 24px;
-  height: 24px;
   margin-right: 8px;
 }
 
@@ -111,16 +134,36 @@
 
 /* Index Body */
 .hero-img {
-  background-image: url("https://via.placeholder.com/600x800?text=Hero+Image"); /* Replace with actual image */
+  background-image: url(""); /* Replace with actual image */
   background-size: cover;
   background-position: center;
   color: white;
   height: 100%;
   border-radius: 20px;
-  padding: 40px;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+  position: relative;
+}
+
+.herobanner {
+  position: absolute;
+  bottom: 0;
+  padding: 2rem;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.8) 100%);
+  height: 100%;
+  width: 100%;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.hero-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px;
 }
 
 .hero-img h2 {
@@ -139,6 +182,12 @@
   padding: 10px 20px;
   font-size: 0.9rem;
   border-radius: 10px;
+  border: 1px solid #939aaf;
+  width: 150px;
+}
+.btn-dark-custom:hover {
+  background-color: #2a2a2a;
+  color: #fff;
 }
 
 .feature-card {
@@ -170,6 +219,33 @@
   margin-bottom: 25px;
 }
 
+.product-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  text-align-last: left;
+  gap: 0.5rem;
+}
+.price-button {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.price-button button {
+  margin: 0 !important;
+}
+.productName {
+  font-size: 0.9rem;
+  color: #636b61;
+  font-weight: 400;
+}
+.promo-text {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
 /* Index body */
 
 /* Product Index */
@@ -204,9 +280,9 @@
 }
 
 .product-price {
-  font-size: 1.1rem;
+  font-size: 1.3rem;
   font-weight: 500;
-  color: #444;
+  color: #636b61;
 }
 
 .btn-cart {
@@ -223,19 +299,24 @@
   font-size: 2rem;
   margin-bottom: 30px;
 }
+.premiumBags {
+  background: #f7fbfc;
+  padding: 2rem;
+}
 /* Product Index */
 
 /* Premium Bags */
 .promo-section {
   background-color: #fff;
   border-radius: 20px;
-  padding: 40px;
+  padding: 0;
   margin: 40px 0;
 }
 
 .promo-text h2 {
-  font-size: 2.5rem;
   font-weight: 700;
+  margin-top: 1rem;
+  font-size: 3.625rem;
   color: #2b3a2f;
 }
 
@@ -263,15 +344,21 @@
 /* Premium Bags */
 
 /* Payment Cashback */
+.cashbacks{ 
+  background: #F9F9F9;
+  padding: 0 0 2.5rem;
+}
 .cashback-banner {
   background: linear-gradient(to right, #0047ab, #001f4d);
   border-radius: 15px;
-  padding: 20px 30px;
+  /* padding: 20px 30px; */
   color: white;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  margin: 40px 0;
+}
+
+.cashback-text{
+  padding: 2rem;
 }
 
 .cashback-text h5 {
@@ -291,8 +378,8 @@
 }
 
 .card-img {
-  max-height: 70px;
-  margin-right: 25px;
+    width: 170px;
+    margin: 1rem 1rem 0;
 }
 
 .btn-buy {

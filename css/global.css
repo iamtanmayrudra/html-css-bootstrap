@@ -3,6 +3,9 @@
 * {
   font-family: "Roboto", sans-serif;
 }
+img{
+  max-width: 100%;
+}
 
 /* Header */
 .top-bar {
@@ -88,14 +91,19 @@
 
 .footer .tagline {
   color: #a3b1c6;
-  margin-bottom: 20px;
+  margin-bottom: 1.2rem;
+  font-size: 1.4rem;
 }
 
 .footer a {
-  color: #cbd5cb;
+  color: #acacac;
   text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: 600;
 }
-
+.copyright a {
+  font-size: 0.7rem;
+}
 .footer a:hover {
   text-decoration: underline;
 }
@@ -103,7 +111,8 @@
 .footer h6 {
   font-weight: 600;
   margin-bottom: 1rem;
-  color: #b4c2a3;
+  color: #636b61;
+  font-size: 1.5rem;
 }
 
 .footer .social-icons img,
@@ -344,8 +353,8 @@
 /* Premium Bags */
 
 /* Payment Cashback */
-.cashbacks{ 
-  background: #F9F9F9;
+.cashbacks {
+  background: #f9f9f9;
   padding: 0 0 2.5rem;
 }
 .cashback-banner {
@@ -357,7 +366,7 @@
   align-items: center;
 }
 
-.cashback-text{
+.cashback-text {
   padding: 2rem;
 }
 
@@ -378,8 +387,8 @@
 }
 
 .card-img {
-    width: 170px;
-    margin: 1rem 1rem 0;
+  width: 170px;
+  margin: 1rem 1rem 0;
 }
 
 .btn-buy {
@@ -389,6 +398,7 @@
   padding: 10px 20px;
   border-radius: 10px;
   border: none;
+  margin-right: 1.5rem;
 }
 /* Payment Cashback */
 
@@ -513,10 +523,38 @@
 /* Product details page */
 
 /* Cart */
+.cart-table{
+  margin-bottom: 0;
+}
 .cart-table img {
-  width: 50px;
-  height: 50px;
   object-fit: contain;
+}
+
+.quantity-control{
+  align-items: center;
+  border: 1px solid #E9E9E9;
+  background: #fff;
+  vertical-align: inherit;
+}
+
+.cart-table tr td:first-child img{
+  border: 1px solid #E9E9E9;
+  margin-right: 1rem;
+}
+.cart-table tr td:last-child{
+  text-align: center;
+}
+
+.cart-table tr th:last-child{
+  text-align: center;
+}
+
+.cart-table tr th{
+  background: #E9E9E9;
+}
+
+.cart-table tr td {
+  background-color: #F7F7F8;
 }
 
 .quantity-control button {
@@ -584,6 +622,9 @@
 }
 /* Cart */
 /* checkout */
+.checkoutContent{
+  padding: 3rem 0;
+}
 .summary img {
   width: 50px;
   height: auto;
@@ -602,6 +643,67 @@
   width: 40px;
   margin: 5px;
 }
+.checkoutContent h4{
+  font-size: 1.7rem;
+}
+.cards{
+  border: 1px solid #E9E9E9;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+}
+.tablecheckPrice tr td{
+  color: #636b61;
+  padding: 0.3rem;
+}
+.tablecheckPrice tr:nth-child(2) td{
+  padding-bottom: 1rem;
+}
+.tablecheckPrice tr:last-child td{
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid #E9E9E9;
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: #000;
+}
+.tablecheckPrice{
+  width: 100%;
+  margin-bottom: 1rem;
+}
+.tablecheckPrice tr td:last-child{
+  text-align: right;
+}
+.checkoutItem{
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.checkoutItem .productImage {
+  width: 80px;
+  height: 80px;
+  padding: 0.7rem;
+  margin-right: 10px;
+  background-color: #f9f9f9;
+}
+.details p{
+  margin: 0;
+}
+.details p span{
+  color: #64B496;
+  font-weight: 900;
+}
+.details p del{
+  color: #7A7A7A;
+}
+
+.startStar{
+  width: auto !important;
+}
+.productNames{
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
 /* checkout */
 /* Payment */
 .features {
@@ -719,8 +821,51 @@
 
 /* Signup */
 
+.list-unstyled li + li {
+  margin-top: 0.8rem;
+}
+.newsletter input::placeholder {
+  color: #626a83;
+  font-weight: 600;
+}
+
 /* Responsive Improvements */
-@media (max-width: 768px) {
+@media (max-width: 991px) {
+  .navbar-collapse {
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    z-index: 9;
+    background: #f9f9f9f5;
+    left: 0px;
+    text-align: center;
+  }
+  .navbar-toggler{
+    position: absolute;
+    right: 20%;
+  }
+  .navbar-toggler:focus {
+    outline: none;
+    box-shadow: none;
+  }
+  .cashback-banner {
+    flex-direction: row;
+    padding: 0;
+  }
+  .btn-buy{
+    white-space: nowrap;
+  }
+  .promo-text h2{
+    font-size: 2rem;
+  }
+  .cashback-text{
+    padding: 0 1rem;
+  }
+  .cashback-text h5{
+    font-size: 1rem;
+  }
+}
+@media (max-width: 767px) {
   .summary .item {
     flex-direction: column;
     align-items: flex-start;
@@ -730,5 +875,88 @@
   }
   .section {
     padding: 10px;
+  }
+  .product-price {
+    font-size: 0.7rem;
+  }
+  .promo-text h2 {
+    font-size: 2rem;
+  }
+  .cashback-banner {
+    flex-direction: column;
+    padding: 0 0 1.5rem;
+  }
+  .cashback-text {
+    text-align: center;
+  }
+  .cashback-text h5 {
+    font-size: 0.8rem;
+  }
+  .btn-cart {
+    font-size: 0.5rem;
+  }
+  .product-card {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .product-card img {
+    /* height: 70%; */
+    object-fit: scale-down;
+  }
+  .card-img {
+    max-width: 6rem;
+    display: none;
+  }
+  .premiumBags {
+    padding: 1rem;
+  }
+  .logo-img {
+    margin: auto;
+    max-width: 80%;
+  }
+  .productAll {
+    padding-top: 0;
+  }
+  .promo-image {
+    padding: 1rem 0;
+  }
+  .promo-text {
+    padding: 1rem;
+  }
+  .footer .tagline {
+    font-size: 1rem;
+    text-align: center;
+  }
+  .social-icons {
+    justify-content: center;
+  }
+  .footer h6 {
+    text-align: center;
+    margin-top: 1.5rem;
+    font-size: 1.3rem;
+    font-weight: 700;
+  }
+  .list-unstyled {
+    padding-left: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .partner-icons{
+    display: flex;
+    justify-content: center;
+  }
+  .footer a{
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .navbar-toggler{
+    position: absolute;
+    right: 30%;
   }
 }

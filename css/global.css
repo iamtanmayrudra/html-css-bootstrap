@@ -644,12 +644,48 @@ img{
   margin: 5px;
 }
 .checkoutContent h4{
-  font-size: 1.7rem;
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+  color: #000;
+}
+.checkoutContent h6{
+  font-weight: 500;
+  margin-bottom: 1rem;
+  color: #000;
+}
+.radios{
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: row;
+  gap: 1.5rem;
+}
+.radios label{
+  font-size: 1.2rem;
+  color: #636b61;
+}
+.radios input[type="radio"]{
+  margin-right: 0.4rem;
 }
 .cards{
   border: 1px solid #E9E9E9;
   padding: 1.5rem;
   border-radius: 0.5rem;
+  color: #7A7A7A;
+}
+.cards button{
+  background: #F53E32;
+  color: #fff;
+  font-weight: 600;
+}
+.returningCustomer{
+  display: inline-flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+.returningCustomer button{
+  max-width: 10rem;
 }
 .tablecheckPrice tr td{
   color: #636b61;
@@ -703,7 +739,13 @@ img{
   font-size: 1.2rem;
   font-weight: 600;
 }
-
+.sectionBillig .input-group{
+  margin: 0.5rem 0;
+}
+.sectionBillig .input-group label{
+  width: 100%;
+  margin-bottom: 0.5rem;
+}
 /* checkout */
 /* Payment */
 .features {

@@ -77,7 +77,7 @@
                 <img src="images/product1.png" class="productImage" alt="Dates Value Pack" />
                 <div class="details">
                   <p class="productNames">Dates Value Pack Pouch</p>
-                  <img src="images/star-checkout.svg" class="startStar" alt="rating">
+                  <img src="images/star-checkout.svg" class="startStar" alt="rating" />
                   <p><span>$120.25</span> <del>$123.25</del></p>
                 </div>
               </div>
@@ -85,7 +85,7 @@
                 <img src="images/product1.png" class="productImage" alt="Smoked Honey Spiced Nuts" />
                 <div class="details">
                   <p class="productNames">Smoked Honey Spiced Nuts</p>
-                  <img src="images/star-checkout.svg" class="startStar" alt="rating">
+                  <img src="images/star-checkout.svg" class="startStar" alt="rating" />
                   <p><span>$120.25</span> <del>$123.25</del></p>
                 </div>
               </div>
@@ -94,11 +94,17 @@
             <!-- Delivery Method -->
             <div class="section delivaryMethod cards my-3">
               <h4>Delivery Method</h4>
-              <label><input type="radio" name="delivery" checked /> Free
-                Shipping - $0.00</label>
-              <label><input type="radio" name="delivery" /> Flat Rate -
-                $5.00</label>
-              <textarea class="form-control mt-2" placeholder="Add Comments About Your Order"></textarea>
+              <div class="rateChecks">
+                <label>
+                  <span>Free Shipping</span>
+                  <div><input type="radio" name="delivery" checked /> Rate - $0.00</div>
+                </label>
+                <label>
+                  <span>Flat Rate</span>
+                  <div><input type="radio" name="delivery" /> Rate - $5.00</div>
+                </label>
+              </div>
+              <textarea class="form-control mt-2"></textarea>
             </div>
 
             <!-- Payment Method -->
@@ -108,11 +114,8 @@
                 Delivery</label>
               <label><input type="radio" name="payment" /> UPI</label>
               <label><input type="radio" name="payment" /> Bank Transfer</label>
-              <div class="payment-icons">
-                <img src="visa.png" alt="Visa" />
-                <img src="paypal.png" alt="PayPal" />
-                <img src="skrill.png" alt="Skrill" />
-                <img src="visa-electron.png" alt="Visa Electron" />
+              <div class="paymentcredit">
+                <img src="images/cards.png" alt="cards Payment" />
               </div>
             </div>
           </div>
@@ -156,12 +159,10 @@
               <h4>Billing Details</h4>
               <div class="checkoutOption">
                 <h6>Checkout Options</h6>
-                  <div class="radios">
-                    <label><input type="radio" name="checkout" checked /> Register
-                      Account</label>
-                    <label><input type="radio" name="checkout" /> Guest
-                      Checkout</label>
-                  </div>
+                <div class="radios">
+                  <label><input type="radio" name="checkout" checked /> I want to use an existing address</label>
+                  <label><input type="radio" name="checkout" /> I want to use new address</label>
+                </div>
               </div>
               <div class="row">
                 <div class="col-lg-6">

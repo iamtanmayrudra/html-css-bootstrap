@@ -813,10 +813,7 @@ input[type="radio"]:checked:before{
 /* Payment */
 .paymentArea{
   position: relative;
-}
-.paymentArea{
-  position: relative;
-  padding: 2rem 0;
+  padding: 4rem 0;
   z-index: 0;
 }
 .paymentArea:after{
@@ -826,20 +823,59 @@ input[type="radio"]:checked:before{
   top: 0;
   width: 50%;
   height: 100%;
-  background: #EDE8FF;
+  background: #F7F8FC;
   z-index: -1;
+}
+.sucribe_info {
+    background: linear-gradient(to right, rgba(71, 71, 71, 1) 0%, rgb(114 114 114) 100%);
+    padding: 2rem;
+    color: #fff;
+}
+.sucribe_info h4{
+  font-size: 1rem;
+  font-weight: 400;
+}
+.sucribe_info h1{
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
 }
 .features {
   /* width: 50%; */
   padding: 20px;
 }
 
+.ducribePrice{
+  margin-top: 3rem;
+}
+.ducribePrice p{
+  display: flex;
+  justify-content: space-between;
+  color: #fff !important;
+  font-weight: 300;
+}
+.ducribePrice p:first-child {
+  color: #c3c3c3 !important;
+}
+.ducribePrice p:last-child {
+  font-weight: 500;
+}
+.specialCardIcon{
+  position: relative;
+}
+.specialCardIcon img{
+  position: absolute;
+  width: 150px;
+  right: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+}
 .features h2 {
   font-size: 24px;
   font-weight: bold;
-  margin-bottom: 2rem;
-  padding-bottom: 2rem;
-  border-bottom: 1px solid #ccc;
+  margin-bottom:  3em;
+  padding-bottom: 4rem;
+  border-bottom: 1px solid #E5E5E5;
 }
 .featurePayment p{
   margin-bottom: 0;
@@ -860,12 +896,14 @@ input[type="radio"]:checked:before{
 
 .payment-form {
   /* width: 45%; */
-  background-color: #fff;
-  padding: 25px;
-  border-radius: 10px;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  /* background-color: #fff; */
+  /* padding: 25px; */
+  /* border-radius: 10px; */
+  /* box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); */
 }
-
+.paymentForm{
+  /* padding: 2rem; */
+}
 .payment-form h2 {
   font-size: 22px;
   font-weight: bold;
@@ -878,30 +916,32 @@ input[type="radio"]:checked:before{
   margin-bottom: 10px;
 }
 
-.payment-form .form-group {
-  margin-bottom: 15px;
-}
-
 .payment-form label {
   font-weight: bold;
 }
 
 .payment-form .form-control {
-  padding: 10px;
+  padding: 0;
   border-radius: 5px;
-  border: 1px solid #ccc;
+  border: 1px solid #fff;
+  height: 30px;
+}
+
+.payment-form .form-control:focus{
+  border: none;
 }
 
 .payment-form .btn {
   width: 100%;
-  background-color: #007bff;
+  background-color: #F53E32;
   color: white;
-  font-size: 18px;
-  padding: 10px;
-  border-radius: 5px;
+  font-size: 1.5rem;
   border: none;
+  border-radius: 0px;
+  line-height: 50px;
   cursor: pointer;
   transition: 0.3s;
+  font-weight: 600;
 }
 
 .payment-form .btn:hover {
@@ -911,12 +951,37 @@ input[type="radio"]:checked:before{
 
 /* Login */
 .login-container {
-  max-width: 400px;
-  margin: 100px auto;
-  padding: 30px;
-  border-radius: 12px;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-  background-color: #fff;
+    max-width: 400px;
+    margin: 100px auto;
+    padding: 30px;
+    border-radius: 12px;
+    background-color: #fff;
+    border: 1px solid #E9E9E9;
+}
+
+.login-container input[type="checkbox"] {
+  background: linear-gradient(to bottom, rgba(255,255,255,1) 0%,rgba(242,242,242,1) 100%);
+  width: 20px;
+  height: 20px;
+}
+
+.logBtn{
+  background-color: #F53E32;
+
+  color: #fff;
+  font-weight: 600;
+  font-size: 1.2rem;}
+
+.login-container input[type="password"],
+.login-container input[type="text"],
+.login-container input[type="number"],
+.login-container input[type="email"]{
+  border: 1px solid #E9E9E9;
+  padding: 10px;
+  border-radius: 5px;
+  width: 100%;
+  height: 3.5rem !important;
+  margin-bottom: 15px;
 }
 .form-control:focus {
   box-shadow: none;
@@ -990,6 +1055,9 @@ input[type="radio"]:checked:before{
   }
   .cashback-text h5{
     font-size: 1rem;
+  }
+  .paymentArea:after{
+    position: inherit;
   }
 }
 @media (max-width: 767px) {

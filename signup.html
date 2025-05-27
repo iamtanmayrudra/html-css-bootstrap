@@ -1,257 +1,236 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Product Details</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="css/global.css" />
-  </head>
 
-  <body>
-    <header>
-      <!-- Top Bar -->
-      <div class="top-bar">
-        <i class="bi bi-shield-check text-success me-1"></i> Trusted Shipping
-      </div>
+<head>
+  <meta charset="UTF-8" />
+  <title>Product Details</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="css/global.css" />
+</head>
 
-      <!-- Main Navbar -->
-      <nav class="navbar navbar-expand-lg">
-        <div class="container">
-          <a class="navbar-brand d-flex align-items-center" href="#">
-            <img src="images/logo.svg" alt="Logo" class="logo-img" />
-          </a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNav"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div
-            class="collapse navbar-collapse justify-content-center"
-            id="navbarNav"
-          >
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link" href="#">Shop Now</a>
-              </li>
-              <li class="nav-item"><a class="nav-link" href="#">About</a></li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Contact Us</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Benefits</a>
-              </li>
-              <li class="nav-item"><a class="nav-link" href="#">Review</a></li>
-            </ul>
+<body>
+  <header>
+    <!-- Top Bar -->
+    <div class="top-bar">
+      <i class="bi bi-shield-check text-success me-1"></i> Trusted Shipping
+    </div>
+
+    <!-- Main Navbar -->
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+        <a class="navbar-brand d-flex align-items-center" href="#">
+          <img src="images/logo.svg" alt="Logo" class="logo-img" />
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Shop Now</a>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Benefits</a>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="#">Review</a></li>
+          </ul>
+        </div>
+        <div class="d-flex align-items-center position-relative">
+          <div class="cartBar">
+            <img src="images/cartIcon.svg" alt="Cart Icons" />
+            <span>0</span>
           </div>
-          <div class="d-flex align-items-center position-relative">
-            <div class="cartBar">
-              <img src="images/cartIcon.svg" alt="Cart Icons" />
-              <span>0</span>
-            </div>
-            <a href="#" class="login-link">Login</a>
+          <a href="#" class="login-link">Login</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="login">
+      <div class="container-fluid custom-fluid">
+        <div class="row">
+          <div class="login-container signupContainer">
+            <h3 class="text-center mb-4">Create Account</h3>
+            <form>
+              <div class="row">
+                <div class="col-lg-6">
+                  <div class="form-group">
+                    <label for="fullName" class="form-label">First Name</label>
+                    <input type="text" class="form-control" id="firstname" placeholder="First Name" required />
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="form-group">
+                    <label for="lastName" class="form-label">Last Name</label>
+                    <input type="text" class="form-control" id="lastname" placeholder="Last Name" required />
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="form-group">
+                    <label for="fullName" class="form-label">Your Phone No.</label>
+                    <input type="text" class="form-control" id="phone" placeholder="Phone Number" required />
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="form-group">
+                    <label for="fullName" class="form-label">Your Phone</label>
+                    <input type="text" class="form-control" id="phone" placeholder="Phone Number" required />
+                  </div>
+                </div>
+                <div class="col-lg-12">
+                  <div class="form-group">
+                    <label for="all" class="form-label">Your Address</label>
+                    <input type="text" class="form-control" id="phone" placeholder="Address" required />
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="form-group">
+                    <label for="all" class="form-label">City</label>
+                    <select name="" id="" class="form-control">
+                      <option value="">India</option>
+                      <option value="">India</option>
+                      <option value="">UK</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="form-group">
+                    <label for="all" class="form-label">Post Code</label>
+                    <input type="text" class="form-control" id="psotcode" placeholder="Post Code" required />
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="form-group">
+                    <label for="all" class="form-label">Country</label>
+                    <select name="" id="" class="form-control">
+                      <option value="">India</option>
+                      <option value="">India</option>
+                      <option value="">UK</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="form-group">
+                    <label for="all" class="form-label">Region / State</label>
+                    <select name="" id="" class="form-control">
+                      <option value="">Select State</option>
+                      <option value="">India</option>
+                      <option value="">UK</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="col-lg-12">
+                  <div class="d-flex flex-row justify-content-between align-items-center">
+                    <button type="submit" class="btn logBtn">Signup</button>
+                    <a href="#" class="logLink">Have an account?</a>
+                  </div>
+                </div>
+              </div>
+            </form>
           </div>
         </div>
-      </nav>
-    </header>
+      </div>
 
-    <main>
-      <section class="signup">
-        <div class="signup-container">
-          <h3 class="text-center mb-4">Create Account</h3>
-          <form>
-            <div class="mb-3">
-              <label for="fullName" class="form-label">Full Name</label>
-              <input
-                type="text"
-                class="form-control"
-                id="fullName"
-                placeholder="Your full name"
-                required
-              />
-            </div>
-            <div class="mb-3">
-              <label for="email" class="form-label">Email address</label>
-              <input
-                type="email"
-                class="form-control"
-                id="email"
-                placeholder="name@example.com"
-                required
-              />
-            </div>
-            <div class="mb-3">
-              <label for="username" class="form-label">Username</label>
-              <input
-                type="text"
-                class="form-control"
-                id="username"
-                placeholder="Choose a username"
-                required
-              />
-            </div>
-            <div class="mb-3">
-              <label for="password" class="form-label">Password</label>
-              <input
-                type="password"
-                class="form-control"
-                id="password"
-                placeholder="Create a password"
-                required
-              />
-            </div>
-            <div class="mb-3">
-              <label for="confirmPassword" class="form-label"
-                >Confirm Password</label
-              >
-              <input
-                type="password"
-                class="form-control"
-                id="confirmPassword"
-                placeholder="Repeat your password"
-                required
-              />
-            </div>
-            <button type="submit" class="btn btn-primary">Sign Up</button>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="row mb-4">
+        <div class="col-lg-4 col-md-6">
+          <div class="d-flex align-items-center mb-3">
+            <img src="images/footerLogo.svg" alt="Logo" class="logo-img" />
+          </div>
+          <p class="tagline">Your eCommerce Solution Platform</p>
+          <div class="social-icons d-flex">
+            <img src="images/fb.svg" alt="Facebook" />
+            <img src="images/x.svg" alt="X" />
+            <img src="images/insta.svg" alt="Instagram" />
+            <img src="images/yt.svg" alt="YouTube" />
+            <img src="images/wapp.svg" alt="WhatsApp" />
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-6">
+          <h6>Products</h6>
+          <ul class="list-unstyled">
+            <li><a href="#">All Reviews</a></li>
+            <li><a href="#">Social Shop</a></li>
+            <li><a href="#">Social Weight</a></li>
+            <li><a href="#">True Profit</a></li>
+            <li><a href="#">All Products</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+          <h6>Services</h6>
+          <ul class="list-unstyled">
+            <li><a href="#">Website Audit</a></li>
+            <li><a href="#">Website Transition</a></li>
+            <li><a href="#">Page Speed Optimization</a></li>
+            <li><a href="#">Product Feed Optimization</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+          <h6>Subscribe Our Newsletter</h6>
+          <form class="newsletter d-flex">
+            <input type="email" class="form-control me-2" placeholder="Enter your email" />
+            <button type="submit" class="btn">
+              <i class="bi bi-send-fill text-white"></i>
+            </button>
           </form>
-          <p class="mt-3 text-center">
-            Already have an account? <a href="#">Login here</a>
+
+          <h6 class="mt-4">Official Partner</h6>
+          <div class="partner-icons d-flex">
+            <img src="images/shopifyIcon.svg" alt="Shopify" />
+            <img src="images/amazon.svg" alt="Amazon" />
+            <img src="images/flipkartIcon.svg" alt="Flipkart" />
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-12 text-center">
+          <p class="copyright">
+            © 2025 YourCompanyName. All rights reserved.<br />
+            Prices, specifications, and availability of products are subject
+            to change without notice. We are not responsible for typographical
+            or illustrative errors.
+            <br />
+            This site is protected by reCAPTCHA and the Google
+            <a href="#">Privacy Policy</a> and
+            <a href="#">Terms of Service</a> apply.
           </p>
         </div>
-      </section>
-    </main>
-
-    <footer class="footer">
-      <div class="container">
-        <div class="row mb-4">
-          <div class="col-lg-4 col-md-6">
-            <div class="d-flex align-items-center mb-3">
-              <img src="images/footerLogo.svg" alt="Logo" class="logo-img" />
-            </div>
-            <p class="tagline">Your eCommerce Solution Platform</p>
-            <div class="social-icons d-flex">
-              <img
-                src="images/fb.svg"
-                alt="Facebook"
-              />
-              <img
-                src="images/x.svg"
-                alt="X"
-              />
-              <img
-                src="images/insta.svg"
-                alt="Instagram"
-              />
-              <img
-                src="images/yt.svg"
-                alt="YouTube"
-              />
-              <img
-                src="images/wapp.svg"
-                alt="WhatsApp"
-              />
-            </div>
-          </div>
-
-          <div class="col-lg-2 col-md-6">
-            <h6>Products</h6>
-            <ul class="list-unstyled">
-              <li><a href="#">All Reviews</a></li>
-              <li><a href="#">Social Shop</a></li>
-              <li><a href="#">Social Weight</a></li>
-              <li><a href="#">True Profit</a></li>
-              <li><a href="#">All Products</a></li>
-            </ul>
-          </div>
-
-          <div class="col-lg-3 col-md-6">
-            <h6>Services</h6>
-            <ul class="list-unstyled">
-              <li><a href="#">Website Audit</a></li>
-              <li><a href="#">Website Transition</a></li>
-              <li><a href="#">Page Speed Optimization</a></li>
-              <li><a href="#">Product Feed Optimization</a></li>
-            </ul>
-          </div>
-
-          <div class="col-lg-3 col-md-6">
-            <h6>Subscribe Our Newsletter</h6>
-            <form class="newsletter d-flex">
-              <input
-                type="email"
-                class="form-control me-2"
-                placeholder="Enter your email"
-              />
-              <button type="submit" class="btn">
-                <i class="bi bi-send-fill text-white"></i>
-              </button>
-            </form>
-
-            <h6 class="mt-4">Official Partner</h6>
-            <div class="partner-icons d-flex">
-              <img
-                src="images/shopifyIcon.svg"
-                alt="Shopify"
-              />
-              <img
-                src="images/amazon.svg"
-                alt="Amazon"
-              />
-              <img
-                src="images/flipkartIcon.svg"
-                alt="Flipkart"
-              />
-            </div>
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="col-12 text-center">
-            <p class="copyright">
-              © 2025 YourCompanyName. All rights reserved.<br />
-              Prices, specifications, and availability of products are subject
-              to change without notice. We are not responsible for typographical
-              or illustrative errors.
-              <br />
-              This site is protected by reCAPTCHA and the Google
-              <a href="#">Privacy Policy</a> and
-              <a href="#">Terms of Service</a> apply.
-            </p>
-          </div>
-        </div>
       </div>
-    </footer>
+    </div>
+  </footer>
 
-    <script>
-      function changeImage(el, src) {
-        document.getElementById("mainImage").src = src;
-        document
-          .querySelectorAll(".thumbnail-img")
-          .forEach((img) => img.classList.remove("active"));
-        el.classList.add("active");
-      }
+  <script>
+    function changeImage(el, src) {
+      document.getElementById("mainImage").src = src;
+      document
+        .querySelectorAll(".thumbnail-img")
+        .forEach((img) => img.classList.remove("active"));
+      el.classList.add("active");
+    }
 
-      function scrollThumbnails(direction) {
-        const container = document.getElementById("thumbnailList");
-        container.scrollBy({ top: direction * 60, behavior: "smooth" });
-      }
-    </script>
+    function scrollThumbnails(direction) {
+      const container = document.getElementById("thumbnailList");
+      container.scrollBy({ top: direction * 60, behavior: "smooth" });
+    }
+  </script>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-  </body>
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
 </html>
-<script>
-  // Initialize Bootstrap tooltips
-  var tooltipTriggerList = [].slice.call(
-    document.querySelectorAll('[data-bs-toggle="tooltip"]')
-  );
-  var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
-    return new bootstrap.Tooltip(tooltipTriggerEl);
-  });
-</script>

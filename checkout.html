@@ -1,306 +1,385 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hill Cab</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/global.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Hill Cab</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
-  <link rel="stylesheet" href="css/global.css" />
-</head>
-
-<body>
-  <header>
-    <!-- Top Bar -->
-    <div class="top-bar">
-      <i class="bi bi-shield-check text-success me-1"></i> Trusted Shipping
-    </div>
-
-    <!-- Main Navbar -->
-    <nav class="navbar navbar-expand-lg">
-      <div class="container">
-        <a class="navbar-brand d-flex align-items-center" href="#">
-          <img src="images/logo.svg" alt="Logo" class="logo-img" />
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link" href="#">Shop Now</a>
-            </li>
-            <li class="nav-item"><a class="nav-link" href="#">About</a></li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Contact Us</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Benefits</a>
-            </li>
-            <li class="nav-item"><a class="nav-link" href="#">Review</a></li>
-          </ul>
-        </div>
-        <div class="d-flex align-items-center position-relative">
-          <div class="cartBar">
-            <img src="images/cartIcon.svg" alt="Cart Icons" />
-            <span>0</span>
-          </div>
-          <a href="#" class="login-link">Login</a>
-        </div>
+  <body>
+    <header>
+      <!-- Top Bar -->
+      <div class="top-bar">
+        <i class="bi bi-shield-check text-success me-1"></i> Trusted Shipping
       </div>
-    </nav>
-  </header>
 
-  <main>
-    <section class="checkoutContent">
-      <div class="container">
-        <div class="row">
-          <!-- Order Summary -->
-          <div class="col-md-4">
-            <div class="section summary checkoutSidebar cards">
-              <h4>Order Summary</h4>
-              <table class="tablecheckPrice">
-                <tr>
-                  <td>Sub-Total:</td>
-                  <td>$80.00</td>
-                </tr>
-                <tr>
-                  <td>Delivery Charges:</td>
-                  <td>$80.00</td>
-                </tr>
-                <tr>
-                  <td>Total Amount:</td>
-                  <td>$80.00</td>
-                </tr>
-              </table>
-              <div class="checkoutItem">
-                <img src="images/product1.png" class="productImage" alt="Dates Value Pack" />
-                <div class="details">
-                  <p class="productNames">Dates Value Pack Pouch</p>
-                  <img src="images/star-checkout.svg" class="startStar" alt="rating" />
-                  <p><span>$120.25</span> <del>$123.25</del></p>
-                </div>
-              </div>
-              <div class="checkoutItem">
-                <img src="images/product1.png" class="productImage" alt="Smoked Honey Spiced Nuts" />
-                <div class="details">
-                  <p class="productNames">Smoked Honey Spiced Nuts</p>
-                  <img src="images/star-checkout.svg" class="startStar" alt="rating" />
-                  <p><span>$120.25</span> <del>$123.25</del></p>
-                </div>
-              </div>
-            </div>
-
-            <!-- Delivery Method -->
-            <div class="section delivaryMethod cards my-3">
-              <h4>Delivery Method</h4>
-              <div class="rateChecks">
-                <label>
-                  <span>Free Shipping</span>
-                  <div><input type="radio" name="delivery" checked /> Rate - $0.00</div>
-                </label>
-                <label>
-                  <span>Flat Rate</span>
-                  <div><input type="radio" name="delivery" /> Rate - $5.00</div>
-                </label>
-              </div>
-              <textarea class="form-control mt-2"></textarea>
-            </div>
-
-            <!-- Payment Method -->
-            <div class="section paymentMethod cards">
-              <h4>Payment Method</h4>
-              <label><input type="radio" name="payment" checked /> Cash On
-                Delivery</label>
-              <label><input type="radio" name="payment" /> UPI</label>
-              <label><input type="radio" name="payment" /> Bank Transfer</label>
-              <div class="paymentcredit">
-                <img src="images/cards.png" alt="cards Payment" />
-              </div>
-            </div>
+      <!-- Main Navbar -->
+      <nav class="navbar navbar-expand-lg">
+        <div class="container">
+          <a class="navbar-brand d-flex align-items-center" href="#">
+            <img src="images/logo.svg" alt="Logo" class="logo-img" />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-center"
+            id="navbarNav"
+          >
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Shop Now</a>
+              </li>
+              <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Benefits</a>
+              </li>
+              <li class="nav-item"><a class="nav-link" href="#">Review</a></li>
+            </ul>
           </div>
+          <div class="d-flex align-items-center position-relative">
+            <div class="cartBar">
+              <img src="images/cartIcon.svg" alt="Cart Icons" />
+              <span>0</span>
+            </div>
+            <a href="#" class="login-link">Login</a>
+          </div>
+        </div>
+      </nav>
+    </header>
 
-          <!-- Customer Details -->
-          <div class="col-md-8">
-            <div class="checkoutInput cards">
-              <div class="section">
-                <h4>New Customer</h4>
+    <main>
+      <section class="checkoutContent">
+        <div class="container">
+          <div class="row">
+            <!-- Order Summary -->
+            <div class="col-md-4">
+              <div class="section summary checkoutSidebar cards">
+                <h4>Order Summary</h4>
+                <table class="tablecheckPrice">
+                  <tr>
+                    <td>Sub-Total:</td>
+                    <td>$80.00</td>
+                  </tr>
+                  <tr>
+                    <td>Delivery Charges:</td>
+                    <td>$80.00</td>
+                  </tr>
+                  <tr>
+                    <td>Total Amount:</td>
+                    <td>$80.00</td>
+                  </tr>
+                </table>
+                <div class="checkoutItem">
+                  <img
+                    src="images/product1.png"
+                    class="productImage"
+                    alt="Dates Value Pack"
+                  />
+                  <div class="details">
+                    <p class="productNames">Dates Value Pack Pouch</p>
+                    <img
+                      src="images/star-checkout.svg"
+                      class="startStar"
+                      alt="rating"
+                    />
+                    <p><span>$120.25</span> <del>$123.25</del></p>
+                  </div>
+                </div>
+                <div class="checkoutItem">
+                  <img
+                    src="images/product1.png"
+                    class="productImage"
+                    alt="Smoked Honey Spiced Nuts"
+                  />
+                  <div class="details">
+                    <p class="productNames">Smoked Honey Spiced Nuts</p>
+                    <img
+                      src="images/star-checkout.svg"
+                      class="startStar"
+                      alt="rating"
+                    />
+                    <p><span>$120.25</span> <del>$123.25</del></p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Delivery Method -->
+              <div class="section delivaryMethod cards my-3">
+                <h4>Delivery Method</h4>
+                <div class="rateChecks">
+                  <label>
+                    <span>Free Shipping</span>
+                    <div>
+                      <input type="radio" name="delivery" checked /> Rate -
+                      $0.00
+                    </div>
+                  </label>
+                  <label>
+                    <span>Flat Rate</span>
+                    <div>
+                      <input type="radio" name="delivery" /> Rate - $5.00
+                    </div>
+                  </label>
+                </div>
+                <textarea class="form-control mt-2"></textarea>
+              </div>
+
+              <!-- Payment Method -->
+              <div class="section paymentMethod cards">
+                <h4>Payment Method</h4>
+                <label
+                  ><input type="radio" name="payment" checked /> Cash On
+                  Delivery</label
+                >
+                <label><input type="radio" name="payment" /> UPI</label>
+                <label
+                  ><input type="radio" name="payment" /> Bank Transfer</label
+                >
+                <div class="paymentcredit">
+                  <img src="images/cards.png" alt="cards Payment" />
+                </div>
+              </div>
+            </div>
+
+            <!-- Customer Details -->
+            <div class="col-md-8">
+              <div class="checkoutInput cards">
+                <div class="section">
+                  <h4>New Customer</h4>
+                  <div class="checkoutOption">
+                    <h6>Checkout Options</h6>
+                    <div class="radios">
+                      <label
+                        ><input type="radio" name="checkout" checked /> Register
+                        Account</label
+                      >
+                      <label
+                        ><input type="radio" name="checkout" /> Guest
+                        Checkout</label
+                      >
+                    </div>
+                    <p>
+                      By creating an account you will be able to shop faster, be
+                      up to date on an order's status, and keep track of the
+                      orders you have previously made.
+                    </p>
+                    <button class="btn">Continue</button>
+                  </div>
+                </div>
+
+                <div class="section mt-5">
+                  <h4>Returning Customer</h4>
+                  <div class="returningCustomer">
+                    <label for="">
+                      <input
+                        type="email"
+                        class="form-control"
+                        placeholder="Enter Email"
+                      />
+                    </label>
+                    <label for="">
+                      <input
+                        type="passsword"
+                        class="form-control"
+                        placeholder="Enter Password"
+                      />
+                    </label>
+                  </div>
+                  <button class="btn">Login</button>
+                </div>
+              </div>
+              <div class="sectionBillig cards mt-3">
+                <h4>Billing Details</h4>
                 <div class="checkoutOption">
                   <h6>Checkout Options</h6>
                   <div class="radios">
-                    <label><input type="radio" name="checkout" checked /> Register
-                      Account</label>
-                    <label><input type="radio" name="checkout" /> Guest
-                      Checkout</label>
+                    <label
+                      ><input type="radio" name="checkout" checked /> I want to
+                      use an existing address</label
+                    >
+                    <label
+                      ><input type="radio" name="checkout" /> I want to use new
+                      address</label
+                    >
                   </div>
-                  <p>
-                    By creating an account you will be able to shop faster, be
-                    up to date on an order's status, and keep track of the
-                    orders you have previously made.
-                  </p>
+                </div>
+                <div class="row">
+                  <div class="col-lg-6">
+                    <div class="input-group">
+                      <label for="">First Name</label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="Full Name"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="input-group">
+                      <label for="">Last Name</label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="Full Name"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-lg-12">
+                    <div class="input-group">
+                      <label for="">Address</label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="Address"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="input-group">
+                      <label for="">City</label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="City"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="input-group">
+                      <label for="">Country</label>
+                      <select class="form-control">
+                        <option>Country</option>
+                        <option>India</option>
+                        <option>USA</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="input-group">
+                      <label for="">Post Code</label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="Post Code"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="input-group">
+                      <label for="">Region State</label>
+                      <select class="form-control">
+                        <option>Region/State</option>
+                        <option>West Bengal</option>
+                        <option>Maharashtra</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <div class="input-group">
                   <button class="btn">Continue</button>
                 </div>
               </div>
-
-              <div class="section mt-5">
-                <h4>Returning Customer</h4>
-                <div class="returningCustomer">
-                  <label for="">
-                    <input type="email" class="form-control" placeholder="Enter Email" />
-                  </label>
-                  <label for="">
-                    <input type="passsword" class="form-control" placeholder="Enter Password" />
-                  </label>
-                </div>
-                <button class="btn">Login</button>
-              </div>
-            </div>
-            <div class="sectionBillig cards mt-3">
-              <h4>Billing Details</h4>
-              <div class="checkoutOption">
-                <h6>Checkout Options</h6>
-                <div class="radios">
-                  <label><input type="radio" name="checkout" checked /> I want to use an existing address</label>
-                  <label><input type="radio" name="checkout" /> I want to use new address</label>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-lg-6">
-                  <div class="input-group">
-                    <label for="">First Name</label>
-                    <input type="text" class="form-control" placeholder="Full Name" />
-                  </div>
-                </div>
-                <div class="col-lg-6">
-                  <div class="input-group">
-                    <label for="">Last Name</label>
-                    <input type="text" class="form-control" placeholder="Full Name" />
-                  </div>
-                </div>
-                <div class="col-lg-12">
-                  <div class="input-group">
-                    <label for="">Address</label>
-                    <input type="text" class="form-control" placeholder="Address" />
-                  </div>
-                </div>
-                <div class="col-lg-6">
-                  <div class="input-group">
-                    <label for="">City</label>
-                    <input type="text" class="form-control" placeholder="City" />
-                  </div>
-                </div>
-                <div class="col-lg-6">
-                  <div class="input-group">
-                    <label for="">Country</label>
-                    <select class="form-control">
-                      <option>Country</option>
-                      <option>India</option>
-                      <option>USA</option>
-                    </select>
-                  </div>
-                </div>
-                <div class="col-lg-6">
-                  <div class="input-group">
-                    <label for="">Post Code</label>
-                    <input type="text" class="form-control" placeholder="Post Code" />
-                  </div>
-                </div>
-                <div class="col-lg-6">
-                  <div class="input-group">
-                    <label for="">Region State</label>
-                    <select class="form-control">
-                      <option>Region/State</option>
-                      <option>West Bengal</option>
-                      <option>Maharashtra</option>
-                    </select>
-                  </div>
-                </div>
-              </div>
-              <div class="input-group">
-                <button class="btn">Continue</button>
-              </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
-  </main>
+      </section>
+    </main>
 
-  <footer class="footer">
-    <div class="container">
-      <div class="row mb-4">
-        <div class="col-lg-4 col-md-6">
-          <div class="d-flex align-items-center mb-3">
-            <img src="images/footerLogo.svg" alt="Logo" class="logo-img" />
+    <footer class="footer">
+      <div class="container">
+        <div class="row mb-4">
+          <div class="col-lg-4 col-md-6">
+            <div class="d-flex align-items-center mb-3">
+              <img src="images/footerLogo.svg" alt="Logo" class="logo-img" />
+            </div>
+            <p class="tagline">Your eCommerce Solution Platform</p>
+            <div class="social-icons d-flex">
+              <img src="images/fb.svg" alt="Facebook" />
+              <img src="images/x.svg" alt="X" />
+              <img src="images/insta.svg" alt="Instagram" />
+              <img src="images/yt.svg" alt="YouTube" />
+              <img src="images/wapp.svg" alt="WhatsApp" />
+            </div>
           </div>
-          <p class="tagline">Your eCommerce Solution Platform</p>
-          <div class="social-icons d-flex">
-            <img src="images/fb.svg" alt="Facebook" />
-            <img src="images/x.svg" alt="X" />
-            <img src="images/insta.svg" alt="Instagram" />
-            <img src="images/yt.svg" alt="YouTube" />
-            <img src="images/wapp.svg" alt="WhatsApp" />
+
+          <div class="col-lg-2 col-md-6">
+            <h6>Products</h6>
+            <ul class="list-unstyled">
+              <li><a href="#">All Reviews</a></li>
+              <li><a href="#">Social Shop</a></li>
+              <li><a href="#">Social Weight</a></li>
+              <li><a href="#">True Profit</a></li>
+              <li><a href="#">All Products</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <h6>Services</h6>
+            <ul class="list-unstyled">
+              <li><a href="#">Website Audit</a></li>
+              <li><a href="#">Website Transition</a></li>
+              <li><a href="#">Page Speed Optimization</a></li>
+              <li><a href="#">Product Feed Optimization</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <h6>Subscribe Our Newsletter</h6>
+            <form class="newsletter d-flex">
+              <input
+                type="email"
+                class="form-control me-2"
+                placeholder="Enter your email"
+              />
+              <button type="submit" class="btn">
+                <i class="bi bi-send-fill text-white"></i>
+              </button>
+            </form>
+
+            <h6 class="mt-4">Official Partner</h6>
+            <div class="partner-icons d-flex">
+              <img src="images/shopifyIcon.svg" alt="Shopify" />
+              <img src="images/amazon.svg" alt="Amazon" />
+              <img src="images/flipkartIcon.svg" alt="Flipkart" />
+            </div>
           </div>
         </div>
 
-        <div class="col-lg-2 col-md-6">
-          <h6>Products</h6>
-          <ul class="list-unstyled">
-            <li><a href="#">All Reviews</a></li>
-            <li><a href="#">Social Shop</a></li>
-            <li><a href="#">Social Weight</a></li>
-            <li><a href="#">True Profit</a></li>
-            <li><a href="#">All Products</a></li>
-          </ul>
-        </div>
-
-        <div class="col-lg-3 col-md-6">
-          <h6>Services</h6>
-          <ul class="list-unstyled">
-            <li><a href="#">Website Audit</a></li>
-            <li><a href="#">Website Transition</a></li>
-            <li><a href="#">Page Speed Optimization</a></li>
-            <li><a href="#">Product Feed Optimization</a></li>
-          </ul>
-        </div>
-
-        <div class="col-lg-3 col-md-6">
-          <h6>Subscribe Our Newsletter</h6>
-          <form class="newsletter d-flex">
-            <input type="email" class="form-control me-2" placeholder="Enter your email" />
-            <button type="submit" class="btn">
-              <i class="bi bi-send-fill text-white"></i>
-            </button>
-          </form>
-
-          <h6 class="mt-4">Official Partner</h6>
-          <div class="partner-icons d-flex">
-            <img src="images/shopifyIcon.svg" alt="Shopify" />
-            <img src="images/amazon.svg" alt="Amazon" />
-            <img src="images/flipkartIcon.svg" alt="Flipkart" />
+        <div class="row">
+          <div class="col-12 text-center">
+            <p class="copyright">
+              © 2025 YourCompanyName. All rights reserved. Prices,
+              specifications, and availability of products are subject to change
+              without notice. We are not responsible for typographical or
+              illustrative errors. This site is protected by reCAPTCHA and the
+              Google
+              <a href="#">Privacy Policy</a> and
+              <a href="#">Terms of Service</a> apply.
+            </p>
           </div>
         </div>
       </div>
+    </footer>
 
-      <div class="row">
-        <div class="col-12 text-center">
-          <p class="copyright">
-            © 2025 YourCompanyName. All rights reserved. Prices,
-            specifications, and availability of products are subject to change
-            without notice. We are not responsible for typographical or
-            illustrative errors. This site is protected by reCAPTCHA and the
-            Google
-            <a href="#">Privacy Policy</a> and
-            <a href="#">Terms of Service</a> apply.
-          </p>
-        </div>
-      </div>
-    </div>
-  </footer>
-
-  <!-- Bootstrap Icons -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-</body>
-
+    <!-- Bootstrap Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
 </html>

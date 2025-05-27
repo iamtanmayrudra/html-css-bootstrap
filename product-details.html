@@ -77,24 +77,29 @@
                   id="thumbnailList"
                 >
                   <img
-                    src="https://via.placeholder.com/60x60?text=1"
+                    src="images/product1.png"
                     class="thumbnail-img active"
-                    onclick="changeImage(this, 'https://via.placeholder.com/500x500?text=Main+1')"
+                    onclick="changeImage(this, 'images/product1.png')"
                   />
                   <img
-                    src="https://via.placeholder.com/60x60?text=2"
+                    src="images/product2.png"
                     class="thumbnail-img"
-                    onclick="changeImage(this, 'https://via.placeholder.com/500x500?text=Main+2')"
+                    onclick="changeImage(this, 'images/product2.png')"
                   />
                   <img
-                    src="https://via.placeholder.com/60x60?text=3"
+                    src="images/product3.png"
                     class="thumbnail-img"
-                    onclick="changeImage(this, 'https://via.placeholder.com/500x500?text=Main+3')"
+                    onclick="changeImage(this, 'images/product3.png')"
                   />
                   <img
-                    src="https://via.placeholder.com/60x60?text=4"
+                    src="images/product4.png"
                     class="thumbnail-img"
-                    onclick="changeImage(this, 'https://via.placeholder.com/500x500?text=Main+4')"
+                    onclick="changeImage(this, 'images/product4.png')"
+                  />
+                  <img
+                    src="images/product4.png"
+                    class="thumbnail-img"
+                    onclick="changeImage(this, 'images/product4.png')"
                   />
                 </div>
                 <button class="arrow-btn mt-2" onclick="scrollThumbnails(1)">
@@ -104,12 +109,14 @@
 
               <!-- Main Image -->
               <div class="col-10">
-                <img
+                <div class="thumbnail-main">
+                  <img
                   id="mainImage"
-                  src="https://via.placeholder.com/500x500?text=Main+1"
+                  src="images/product6.png"
                   class="main-image"
                   alt="Main Product Image"
                 />
+                </div>
               </div>
             </div>
           </div>
@@ -243,26 +250,11 @@
             </div>
             <p class="tagline">Your eCommerce Solution Platform</p>
             <div class="social-icons d-flex">
-              <img
-                src="images/fb.svg"
-                alt="Facebook"
-              />
-              <img
-                src="images/x.svg"
-                alt="X"
-              />
-              <img
-                src="images/insta.svg"
-                alt="Instagram"
-              />
-              <img
-                src="images/yt.svg"
-                alt="YouTube"
-              />
-              <img
-                src="images/wapp.svg"
-                alt="WhatsApp"
-              />
+              <img src="images/fb.svg" alt="Facebook" />
+              <img src="images/x.svg" alt="X" />
+              <img src="images/insta.svg" alt="Instagram" />
+              <img src="images/yt.svg" alt="YouTube" />
+              <img src="images/wapp.svg" alt="WhatsApp" />
             </div>
           </div>
 
@@ -302,18 +294,9 @@
 
             <h6 class="mt-4">Official Partner</h6>
             <div class="partner-icons d-flex">
-              <img
-                src="images/shopifyIcon.svg"
-                alt="Shopify"
-              />
-              <img
-                src="images/amazon.svg"
-                alt="Amazon"
-              />
-              <img
-                src="images/flipkartIcon.svg"
-                alt="Flipkart"
-              />
+              <img src="images/shopifyIcon.svg" alt="Shopify" />
+              <img src="images/amazon.svg" alt="Amazon" />
+              <img src="images/flipkartIcon.svg" alt="Flipkart" />
             </div>
           </div>
         </div>
@@ -350,6 +333,11 @@
       }
     </script>
 
+    <!-- Bootstrap Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>

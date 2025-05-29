@@ -958,9 +958,10 @@ input[type="radio"]:checked:before {
 
 /* Login */
 .login {
-  padding: 1rem;
-  width: 100vw;
-  height: 100vh;
+  /* padding: 1rem; */
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
   background: url(../images/login-bg.jpg) no-repeat center center;
   background-size: cover;
   position: relative;
@@ -980,7 +981,7 @@ input[type="radio"]:checked:before {
 }
 
 .custom-fluid {
-  height: 100%;
+  height: 100vh;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -1123,6 +1124,27 @@ select.form-control {
   }
   .signupContainer {
     margin: 0;
+  }
+  .login {
+    padding: 1rem;
+  }
+  .login .form-label{
+    display: none;
+  }
+  .lgin-logo_area{
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    margin-bottom: 1rem !important;
+  }
+  .signupContainer{
+    width: 100%;
+  }
+  .login-container h3{
+    background: #26b203;
+    display: inline-block;
+    margin: 0 auto;
+    justify-content: center;
   }
 }
 @media (max-width: 767px) {

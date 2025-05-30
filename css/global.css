@@ -901,15 +901,15 @@ input[type="radio"]:checked:before {
   margin-right: 15px;
 }
 
-.payment-form {
-  /* width: 45%; */
-  /* background-color: #fff; */
-  /* padding: 25px; */
-  /* border-radius: 10px; */
-  /* box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); */
-}
+/* .payment-form {
+  width: 45%;
+  background-color: #fff;
+  padding: 25px; 
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+} */
 .paymentForm {
-  /* padding: 2rem; */
+  padding: 2rem;
 }
 .payment-form h2 {
   font-size: 22px;
@@ -1084,6 +1084,65 @@ select.form-control {
   font-weight: 600;
 }
 
+/* About */
+
+.about-section {
+  position: relative;
+  padding: 4rem 2rem;
+}
+.sales-card {
+  background: #fff;
+  border-radius: 15px;
+  padding: 1.5rem;
+  color: #000;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.sales-card h3 {
+  font-weight: 700;
+}
+.sales-card .avatars img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+.about-text  p{
+  color: #97918B;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.img-card img{
+  width: 100%;
+  height: auto;
+  border-radius: 15px;
+}
+.about-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+.btn-shop {
+  background-color: #779c9f;
+  border: none;
+  padding: 0.6rem 1.5rem;
+  color: white;
+  font-weight: 600;
+  border-radius: 6px;
+  margin-top: 1rem;
+}
+.img-card {
+  border-radius: 15px;
+  overflow: hidden;
+}
+/* .position-overlay {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+} */
+
+/* About */
+
 /* Responsive Improvements */
 @media (max-width: 991px) {
   .navbar-collapse {
@@ -1128,19 +1187,19 @@ select.form-control {
   .login {
     padding: 1rem;
   }
-  .login .form-label{
+  .login .form-label {
     display: none;
   }
-  .lgin-logo_area{
+  .lgin-logo_area {
     display: flex !important;
     justify-content: center !important;
     align-items: center !important;
     margin-bottom: 1rem !important;
   }
-  .signupContainer{
+  .signupContainer {
     width: 100%;
   }
-  .login-container h3{
+  .login-container h3 {
     background: #26b203;
     display: inline-block;
     margin: 0 auto;
@@ -1233,6 +1292,11 @@ select.form-control {
   }
   .footer a {
     font-size: 1rem;
+  }
+  .position-overlay {
+    position: static;
+    transform: none;
+    margin-top: 2rem;
   }
 }
 

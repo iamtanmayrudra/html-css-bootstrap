@@ -51,53 +51,90 @@
   </header>
 
   <main>
-    <section class="about-section">
-      <div class="container">
-        <div class="row align-items-center justify-content-center gap-5">
-          <!-- Left Column Images -->
-          <div class="col-lg-6 col-sm-12 mb-4 mb-lg-0 d-flex flex-column gap-4">
-            <div class="row align-items-center">
-              <div class="col-lg-6 col-sm-6">
-                <div class="img-card">
-                  <img src="images/about-1.jpg" class="img-fluid" alt="Luggage" />
-                </div>
-              </div>
-              <div class="col-lg-6 col-sm-6">
-                <div class="d-flex justify-content-center position-relative mb-5">
-                  <div class="sales-card position-overlay">
-                    <h3>30,000+</h3>
-                    <p class="mb-2">
-                      Sales in July 2021 with 5 star ratings and happy clients.
-                    </p>
-                    <hr />
-                    <div class="avatars d-flex flex-wrap mt-2">
-                      <!-- Placeholder avatars -->
-                      <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="avatar" />
-                      <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="avatar" />
-                      <img src="https://randomuser.me/api/portraits/men/53.jpg" alt="avatar" />
-                      <img src="https://randomuser.me/api/portraits/women/12.jpg" alt="avatar" />
-                    </div>
+    <section class="contact-section">
+      <div class="container my-5">
+        <div class="col-lg-12">
+          <div class="contactContentBody">
+            <h2 class="text-center fw-bold">Contact Us</h2>
+            <p class="text-center text-muted">Any question or remarks? Just write us a message!</p>
+            <div class="row contact-card mt-4">
+              <div class="col-md-5 contact-left d-flex flex-column justify-content-between">
+                <div class="contactInfoBox">
+                  <div class="contactline">
+                    <h4>Contact Information</h4>
+                    <p>Say something to start a live chat!</p>
+                  </div>
+                  <div class="contact-info">
+                    <ul>
+                      <li><img src="images/phone-call.svg" alt="Call"> +1012 3456 789</li>
+                      <li><img src="images/sharp-email.svg" alt="Message"> demo@gmail.com</li>
+                      <li><img src="images/location-filled.svg" alt="map"> 132 Dartmouth Street Boston, Massachusetts 02156 United States</li>
+                    </ul>
+                  </div>
+                  <div class="social-icons d-flex">
+                    <img src="images/fb.svg" alt="Facebook" />
+                    <img src="images/x.svg" alt="X" />
+                    <img src="images/insta.svg" alt="Instagram" />
+                    <img src="images/yt.svg" alt="YouTube" />
+                    <img src="images/wapp.svg" alt="WhatsApp" />
                   </div>
                 </div>
-                <div class="img-card">
-                  <img src="images/about-2.jpg" class="img-fluid" alt="Man with Bag" />
-                </div>
               </div>
-            </div>
-          </div>
 
-          <!-- Right Column Text -->
-          <div class="col-lg-4 col-sm-12 mt-lg-5 mt-lg-0">
-            <div class="about-text">
-              <h2 class="about-title mb-4">ABOUT US</h2>
-              <p>
-                Whom they fine john he give of rich he. They age and draw mrs
-                like. Improving end distrusts may instantly was household
-                applauded incommode. Why kept very ever home   mrs. Considered
-                sympathize ten uncommonly occasional assistance sufficient
-                not.
-              </p>
-              <button class="btn-shop">SHOP NOW</button>
+              <div class="col-md-7 p-4">
+                <form class="contactForm">
+                  <div class="row mb-3">
+                    <div class="col">
+                      <label class="form-label">First Name</label>
+                      <input type="text" class="form-control" placeholder="">
+                    </div>
+                    <div class="col">
+                      <label class="form-label">Last Name</label>
+                      <input type="text" class="form-control" value="">
+                    </div>
+                  </div>
+
+                  <div class="row mb-3">
+                    <div class="col">
+                      <label class="form-label">Email</label>
+                      <input type="email" class="form-control" placeholder="">
+                    </div>
+                    <div class="col">
+                      <label class="form-label">Phone Number</label>
+                      <input type="tel" class="form-control" value="">
+                    </div>
+                  </div>
+
+                  <div class="mb-3">
+                    <label class="form-label">Select Subject?</label><br>
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="radio" name="subject" checked>
+                      <label class="form-check-label">General Inquiry</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="radio" name="subject">
+                      <label class="form-check-label">General Inquiry</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="radio" name="subject">
+                      <label class="form-check-label">General Inquiry</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="radio" name="subject">
+                      <label class="form-check-label">General Inquiry</label>
+                    </div>
+                  </div>
+
+                  <div class="mb-3">
+                    <label class="form-label">Message</label>
+                    <textarea class="form-control" placeholder="Write your message.." rows="4"></textarea>
+                  </div>
+
+                  <div class="text-end">
+                    <button type="submit" class="btn btn-dark">Send Message</button>
+                  </div>
+                </form>
+              </div>
             </div>
           </div>
         </div>
